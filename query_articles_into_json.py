@@ -27,13 +27,14 @@ def search_articles(query_string):
 
 
 def main():
-    query_string = "meng wanzhou"
-    path = './'
-    fileName = 'huawei'
+    query_string = '"government shutdown"'
+    filename = 'shutdown'
+    results_filename = filename + '-newsapi-results'
+    articles_filename = filename + '-articles'
 
     start_time = time.time()
     search_results = search_articles(query_string)
-    writeToJSONFile(path, 'searchResults', search_results)
+    writeToJSONFile('newsapi-results', results_filename, search_results)
     end_time = time.time()
     newsapi_query_duration = (end_time - start_time)
     print('time to get query results: ' + str(newsapi_query_duration) + 's')
@@ -58,7 +59,7 @@ def main():
     article_download_duration = (end_time - start_time)
     print('time to download articles: ' + str(article_download_duration) + 's')
 
-    writeToJSONFile(path, fileName, articles)
+    writeToJSONFile('scraped-articles', articles_filename, articles)
 
     print('total results: ' + str(search_results['totalResults']))
 
