@@ -27,8 +27,8 @@ def search_articles(query_string):
 
 
 def main():
-    query_string = '"government shutdown"'
-    filename = 'shutdown'
+    query_string = 'venezuela maduro'
+    filename = 'venezuela'
     results_filename = filename + '-newsapi-results'
     articles_filename = filename + '-articles'
 
