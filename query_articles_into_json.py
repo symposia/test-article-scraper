@@ -4,12 +4,26 @@ import sys
 import json
 import time
 
+import asyncio
 
-def get_article(url):
-    article = Article(url)
-    article.download()
-    article.parse()
-    return article
+
+def add_text_and_format(old_article):
+    formatted_article = {}
+    try:
+        newspaper_article = Article(old_article['url'])
+        newspaper_article.download()
+        newspaper_article.parse()
+        formatted_article = {
+            'title': old_article['title'],
+            'description': old_article['description'],
+            'text': newspaper_article.text,
+            'date': old_article['publishedAt'],
+            'url': old_article['url']
+        }
+    except (ArticleException):
+        print('Error: failed to get article from url: ' + old_article['url'])
+    finally:
+        return formatted_article
 
 
 def writeToJSONFile(path, fileName, data):
@@ -27,8 +41,8 @@ def search_articles(query_string):
 
 
 def main():
-    query_string = 'venezuela maduro'
-    filename = 'venezuela'
+    query_string = 'government shutdown'
+    filename = 'shutdown'
     results_filename = filename + '-newsapi-results'
     articles_filename = filename + '-articles'
 
@@ -37,26 +51,15 @@ def main():
     writeToJSONFile('newsapi-results', results_filename, search_results)
     end_time = time.time()
     newsapi_query_duration = (end_time - start_time)
+    print(len(search_results['articles']), ' articles retrieved.')
     print('time to get query results: ' + str(newsapi_query_duration) + 's')
 
-    urls = [result['url'] for result in search_results['articles']]
-
     articles = []
-
     start_time = time.time()
-    for url in urls:
-        try:
-            article = get_article(url)
-            articles.append({
-                'url': article.url,
-                'source': article.source_url,
-                'title': article.title,
-                'text': article.text
-            })
-        except (ArticleException):
-            print('Error: failed to get article from url: ' + url)
+    articles = list(map(add_text_and_format, search_results['articles']))
     end_time = time.time()
     article_download_duration = (end_time - start_time)
+    print(len(articles), ' successfully processed')
     print('time to download articles: ' + str(article_download_duration) + 's')
 
     writeToJSONFile('scraped-articles', articles_filename, articles)
