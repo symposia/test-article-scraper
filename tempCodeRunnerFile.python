@@ -1,0 +1,10 @@
+my_list = [
+  {"test": "test"},
+  {},
+  {},
+  {}
+]
+
+filtered_list = list(filter(None, my_list))
+
+print("filtered list: ", filtered_list)

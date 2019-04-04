@@ -1,0 +1,149 @@
+{
+  "status": "ok",
+  "sources": [
+    {
+      "id": "bbc-news",
+      "name": "BBC News",
+      "description": "Use BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news.",
+      "url": "http://www.bbc.co.uk/news",
+      "category": "general",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "bbc-sport",
+      "name": "BBC Sport",
+      "description": "The home of BBC Sport online. Includes live sports coverage, breaking news, results, video, audio and analysis on Football, F1, Cricket, Rugby Union, Rugby League, Golf, Tennis and all the main world sports, plus major events such as the Olympic Games.",
+      "url": "http://www.bbc.co.uk/sport",
+      "category": "sports",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "business-insider-uk",
+      "name": "Business Insider (UK)",
+      "description": "Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.",
+      "url": "http://uk.businessinsider.com",
+      "category": "business",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "daily-mail",
+      "name": "Daily Mail",
+      "description": "All the latest news, sport, showbiz, science and health stories from around the world from the Daily Mail and Mail on Sunday newspapers.",
+      "url": "http://www.dailymail.co.uk/home/index.html",
+      "category": "entertainment",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "financial-times",
+      "name": "Financial Times",
+      "description": "The latest UK and international business, finance, economic and political news, comment and analysis from the Financial Times on FT.com.",
+      "url": "http://www.ft.com/home/uk",
+      "category": "business",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "four-four-two",
+      "name": "FourFourTwo",
+      "description": "The latest football news, in-depth features, tactical and statistical analysis from FourFourTwo, the UK&#039;s favourite football monthly.",
+      "url": "http://www.fourfourtwo.com/news",
+      "category": "sports",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "google-news-uk",
+      "name": "Google News (UK)",
+      "description": "Comprehensive, up-to-date UK news coverage, aggregated from sources all over the world by Google News.",
+      "url": "https://news.google.com",
+      "category": "general",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "independent",
+      "name": "Independent",
+      "description": "National morning quality (tabloid) includes free online access to news and supplements. Insight by Robert Fisk and various other columnists.",
+      "url": "http://www.independent.co.uk",
+      "category": "general",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "metro",
+      "name": "Metro",
+      "description": "News, Sport, Showbiz, Celebrities from Metro - a free British newspaper.",
+      "url": "http://metro.co.uk",
+      "category": "general",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "mirror",
+      "name": "Mirror",
+      "description": "All the latest news, sport and celebrity gossip at Mirror.co.uk. Get all the big headlines, pictures, analysis, opinion and video on the stories that matter to you.",
+      "url": "http://www.mirror.co.uk/",
+      "category": "general",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "mtv-news-uk",
+      "name": "MTV News (UK)",
+      "description": "All the latest celebrity news, gossip, exclusive interviews and pictures from the world of music and entertainment.",
+      "url": "http://www.mtv.co.uk/news",
+      "category": "entertainment",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "talksport",
+      "name": "TalkSport",
+      "description": "Tune in to the world's biggest sports radio station - Live Premier League football coverage, breaking sports news, transfer rumours &amp; exclusive interviews.",
+      "url": "http://talksport.com",
+      "category": "sports",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "the-economist",
+      "name": "The Economist",
+      "description": "The Economist offers authoritative insight and opinion on international news, politics, business, finance, science, technology and the connections between them.",
+      "url": "http://www.economist.com",
+      "category": "business",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "the-lad-bible",
+      "name": "The Lad Bible",
+      "description": "The LAD Bible is one of the largest community for guys aged 16-30 in the world. Send us your funniest pictures and videos!",
+      "url": "http://www.theladbible.com",
+      "category": "entertainment",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "the-sport-bible",
+      "name": "The Sport Bible",
+      "description": "TheSPORTbible is one of the largest communities for sports fans across the world. Send us your sporting pictures and videos!",
+      "url": "http://www.thesportbible.com",
+      "category": "sports",
+      "language": "en",
+      "country": "gb"
+    },
+    {
+      "id": "the-telegraph",
+      "name": "The Telegraph",
+      "description": "Latest news, business, sport, comment, lifestyle and culture from the Daily Telegraph and Sunday Telegraph newspapers and video from Telegraph TV.",
+      "url": "http://www.telegraph.co.uk",
+      "category": "general",
+      "language": "en",
+      "country": "gb"
+    }
+  ]
+}
